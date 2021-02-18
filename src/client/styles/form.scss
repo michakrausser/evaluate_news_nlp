@@ -10,17 +10,22 @@ input {
     line-height: 16px;
     margin: 10px 0;
 }
-#result > #title {
+
+#results {
+    border: 1px solid #3D3F45;
+    border-radius: 3px;
+    box-shadow: 5px 10px;
+    padding: 20px;
+}
+
+#results > div {
     background-color: aqua;
     border: 1px solid #3D3F45;
     border-radius: 3px;
-    box-shadow: 5px 10px;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 15px;
 }
-#result > #results {
-    background-color: yellow;
-    border: 1px solid #3D3F45;
-    border-radius: 3px;
-    box-shadow: 5px 10px;
+
+#results #title {
+    font-weight: bold;
+    margin-bottom: 20px;
 }

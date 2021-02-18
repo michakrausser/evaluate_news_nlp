@@ -12,12 +12,12 @@ async function handleSubmit( event ) {
     // console.log("checkForUrl", Client.checkForUrl(formText));
     if( Client.checkForUrl( url )) {
         console.log( "::: Form Submitted :::" )
-        console.log( "url: ", baseUrl + key + output + url )
 
         fetch( '/api-key')
           .then( key => key.json() )
           .then( key => {
-              fetch( baseUrl + key.apiKey + output + url )
+
+            fetch( baseUrl + key.apiKey + output + url )
                 .then( res => res.json() )
                 .then( res => {
 
